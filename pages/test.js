@@ -12,7 +12,7 @@ console.log(playersList)
       <h1 className={styles.header}>COLD HAND PLAYER</h1>
       <div className={styles.playerList} >
      {playersList.map((player,key)=> 
-      <div className={styles.player}>
+      <div id={key} className={styles.player}>
         <div>{player.nickname}</div>
         <div><Image src={player.avatar} width={100} height={100}/></div>
       <div>ELO: {player.games.csgo.faceit_elo}</div> 
