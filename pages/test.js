@@ -11,8 +11,9 @@ console.log(playersList)
     <div className={styles.container}>
       <h1 className={styles.header}>COLD HAND PLAYER</h1>
       <div className={styles.playerList} >
-     {playersList.map((player,key)=> 
-      <div id={key} className={styles.player}>
+     {playersList.map((player, key)=> 
+
+      <div key={key} className={styles.player}>
         <div>{player.nickname}</div>
         <div><Image src={player.avatar} width={100} height={100}/></div>
       <div>ELO: {player.games.csgo.faceit_elo}</div> 
@@ -41,7 +42,7 @@ export const getStaticProps = async () => {
                               });
 
           const data = await res.json();
-          return data;
+          return (index,data);
                             }             
     return {
         props: {playersList}
