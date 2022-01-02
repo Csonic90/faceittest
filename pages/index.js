@@ -3,8 +3,6 @@ import styles from '../styles/Test.module.css'
 
 
 export const Test = ({playersList,playersListInfo}) => {
-
-console.log(playersListInfo)
   if (!playersList) return <div>loading...</div>
   return (
     <div className={styles.container}>
