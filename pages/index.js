@@ -24,19 +24,19 @@ export const Test = ({playersList,playersListInfo}) => {
 }
 
 export const getServerSideProps = async () => {
-  export const getStaticProps = async () => {
-    const players = ["0a7cdac8-b807-4db0-b371-246061b8d23d",
-                    "a9de04f0-91cb-49ae-8872-97156a48406e",
-                    "1911409b-0292-4f50-b66b-1dee3f9b7bd0",
-                    "96786b1a-c278-4efb-8123-c0a7fdd6fa63",
-                    "eb1de30f-3c7e-48c7-9649-a3fea9e46558",
-                    "1f60cb61-72fa-4fcf-b553-bb48e0c60343",
-                    "9bd84ca3-5e44-444e-ae6d-3dc1b59f99dc",
-                    "d3b5987d-47ff-4ee2-abfa-2b715d048641",
-                    "3cb52aca-91ab-4f09-9d9d-9d2f97701c2c",
-                    "f3637a92-5671-4564-b951-02f402a96650",
-                    "c0e46cee-52e9-49bd-89b4-64d21cfa358c" ]
-                    
+
+  const players = ["0a7cdac8-b807-4db0-b371-246061b8d23d",
+                  "a9de04f0-91cb-49ae-8872-97156a48406e",
+                  "1911409b-0292-4f50-b66b-1dee3f9b7bd0",
+                  "96786b1a-c278-4efb-8123-c0a7fdd6fa63",
+                  "eb1de30f-3c7e-48c7-9649-a3fea9e46558",
+                  "1f60cb61-72fa-4fcf-b553-bb48e0c60343",
+                  "9bd84ca3-5e44-444e-ae6d-3dc1b59f99dc",
+                  "d3b5987d-47ff-4ee2-abfa-2b715d048641",
+                  "3cb52aca-91ab-4f09-9d9d-9d2f97701c2c",
+                  "f3637a92-5671-4564-b951-02f402a96650",
+                  "c0e46cee-52e9-49bd-89b4-64d21cfa358c" ]
+
     const playersList = await Promise.all(
       players.map(getPlayer)
     ); 
