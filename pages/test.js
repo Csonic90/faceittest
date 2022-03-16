@@ -22,6 +22,7 @@ console.log(playersList)
      )}
      </div>
     </div>
+    
   )
 }
 
