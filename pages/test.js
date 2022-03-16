@@ -9,7 +9,7 @@ console.log(playersList)
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.header}>COLD HAND PLAYER</h1>
+      <h1 className={styles.header}>COLD  PLAYER</h1>
       <div className={styles.playerList} >
      {playersList.map((player, key)=> 
 
