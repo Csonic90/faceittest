@@ -10,6 +10,7 @@ console.log(playersList)
   return (
     <div className={styles.container}>
       <h1 className={styles.header}>COLD HAND PLAYER</h1>
+      <h2>lvl1: 800 | lvl2: 801-951 | lvl3: 952-1101 | lvl4: 1102-1251 | lvl5: 1252-1401 | lvl6: 1402-1551 |  lvl7: 1552-1701 | lvl8: 1702-1851 | lvl9: 1852-2001 | lvl10: 2002+ </h2>
       <div className={styles.playerList} >
      {playersList.map((player, key)=> 
 
